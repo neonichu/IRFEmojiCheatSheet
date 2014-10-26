@@ -38,6 +38,11 @@
     }];
 }
 
+- (void)testReplacesUppercaseEmojis {
+    NSString *result = [IRFEmojiCheatSheet stringByReplacingEmojiAliasesInString:@"SMILE :+1:"];
+    XCTAssertEqualObjects(result, @"😄 👍", @"Emojy alias replacement error");
+}
+
 //- (void)testAllAliasesHaveAGroup
 //{
 //    NSArray *aliases = [[IRFEmojiCheatSheet emojisByAlias] allKeys];

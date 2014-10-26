@@ -1807,7 +1807,7 @@
     [regex enumerateMatchesInString:string options:NSMatchingReportCompletion range:range usingBlock:^(NSTextCheckingResult *checkingResult, NSMatchingFlags flags, BOOL *stop) {
         NSString *match = [string substringWithRange:checkingResult.range];
         NSString *alias = [match stringByReplacingOccurrencesOfString:@":" withString:@""];
-        NSString *emojiCharacter = [self emojisByAlias][alias];
+        NSString *emojiCharacter = [self emojisByAlias][alias.lowercaseString];
         if (emojiCharacter) {
             NSRange resultRange = NSMakeRange(0, [result length]);
             [result replaceOccurrencesOfString:match withString:emojiCharacter options:0 range:resultRange];
