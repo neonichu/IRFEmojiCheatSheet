@@ -15,8 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2AC1F3428C7D4EE386E19BAF /* Pods-IRFEmojiCheatSheetTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRFEmojiCheatSheetTests.xcconfig"; path = "Pods/Pods-IRFEmojiCheatSheetTests.xcconfig"; sourceTree = "<group>"; };
+		02AFB0BF9E8A702A83C51F39 /* Pods-IRFEmojiCheatSheetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRFEmojiCheatSheetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IRFEmojiCheatSheetTests/Pods-IRFEmojiCheatSheetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6E94594C701E48A583AF2736 /* libPods-IRFEmojiCheatSheetTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IRFEmojiCheatSheetTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4BB31107B3B8237D7685527 /* Pods-IRFEmojiCheatSheetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRFEmojiCheatSheetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IRFEmojiCheatSheetTests/Pods-IRFEmojiCheatSheetTests.release.xcconfig"; sourceTree = "<group>"; };
 		E5C64B39182C552F006941B2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E5C64B3C182C552F006941B2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		E5C64B3D182C552F006941B2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -48,7 +49,7 @@
 				E5C64B5D182C552F006941B2 /* IRFEmojiCheatSheetTests */,
 				E5C64B38182C552F006941B2 /* Frameworks */,
 				E5C64B37182C552F006941B2 /* Products */,
-				2AC1F3428C7D4EE386E19BAF /* Pods-IRFEmojiCheatSheetTests.xcconfig */,
+				F52CA4B7C07F30A810AF206B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +98,15 @@
 				E5C64B60182C552F006941B2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F52CA4B7C07F30A810AF206B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02AFB0BF9E8A702A83C51F39 /* Pods-IRFEmojiCheatSheetTests.debug.xcconfig */,
+				E4BB31107B3B8237D7685527 /* Pods-IRFEmojiCheatSheetTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +198,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-IRFEmojiCheatSheetTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IRFEmojiCheatSheetTests/Pods-IRFEmojiCheatSheetTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -286,7 +296,7 @@
 		};
 		E5C64B6B182C552F006941B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AC1F3428C7D4EE386E19BAF /* Pods-IRFEmojiCheatSheetTests.xcconfig */;
+			baseConfigurationReference = 02AFB0BF9E8A702A83C51F39 /* Pods-IRFEmojiCheatSheetTests.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -306,7 +316,7 @@
 		};
 		E5C64B6C182C552F006941B2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AC1F3428C7D4EE386E19BAF /* Pods-IRFEmojiCheatSheetTests.xcconfig */;
+			baseConfigurationReference = E4BB31107B3B8237D7685527 /* Pods-IRFEmojiCheatSheetTests.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
