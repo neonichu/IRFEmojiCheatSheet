@@ -36,4 +36,6 @@
  */
 + (NSString*)stringByReplacingEmojiAliasesInString:(NSString*)string;
 
++(NSArray*)emojisForPrefix:(NSString*)prefix;
+
 @end

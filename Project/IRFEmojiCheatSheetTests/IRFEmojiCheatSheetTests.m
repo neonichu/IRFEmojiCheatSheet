@@ -43,6 +43,17 @@
     XCTAssertEqualObjects(result, @"😄 👍", @"Emojy alias replacement error");
 }
 
+- (void)testPrefixMatching {
+    NSArray* expected = @[@"🔹",  @"😺", @"😸", @"😏", @"🔸", @"🚬", @"🔺", @"😈",
+                          @"😃", @"😼", @"🔻",  @"😄"];
+
+    NSArray* matches = [IRFEmojiCheatSheet emojisForPrefix:@"sm"];
+    NSArray* uppercaseMatches = [IRFEmojiCheatSheet emojisForPrefix:@"SM"];
+
+    XCTAssertEqualObjects(matches, expected, @"");
+    XCTAssertEqualObjects(uppercaseMatches, expected, @"");
+}
+
 //- (void)testAllAliasesHaveAGroup
 //{
 //    NSArray *aliases = [[IRFEmojiCheatSheet emojisByAlias] allKeys];

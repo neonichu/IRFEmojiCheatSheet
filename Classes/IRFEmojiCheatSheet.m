@@ -1816,5 +1816,17 @@
     return result;
 }
 
++(NSArray *)emojisForPrefix:(NSString *)prefix {
+    NSDictionary* eByA = [self emojisByAlias];
+    NSMutableArray* emojis = [@[] mutableCopy];
+
+    for (NSString* key in eByA) {
+        if ([key hasPrefix:prefix.lowercaseString]) {
+            [emojis addObject:eByA[key]];
+        }
+    }
+
+    return emojis;
+}
 
 @end
