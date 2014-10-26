@@ -1801,7 +1801,7 @@
 }
 
 + (NSString*)stringByReplacingEmojiAliasesInString:(NSString*)string {
-    NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"(:[a-z0-9-+_]+:)" options:NSRegularExpressionCaseInsensitive error:NULL];
+    NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"(:?[A-Za-z0-9-+_]+:?)" options:NSRegularExpressionCaseInsensitive error:NULL];
     NSMutableString *result = [string mutableCopy];
     NSRange range = NSMakeRange(0, [string length]);
     [regex enumerateMatchesInString:string options:NSMatchingReportCompletion range:range usingBlock:^(NSTextCheckingResult *checkingResult, NSMatchingFlags flags, BOOL *stop) {
